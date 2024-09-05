@@ -1,0 +1,56 @@
+ Locality of Reference
+Easy
+0/10
+Problem statement
+What is the output of the following Java code?
+
+public class Test {
+
+    public static void main(String args[]) {
+        int x = 10;
+        System.out.print(x + " ");
+    }
+
+    static {
+        int x = 20;
+        System.out.print(x + " ");
+    } 
+Output 20 10
+Solution description
+static block is executed before main() method. If we declare a static block in the java class it is executed when the class is loaded.
+What is the output of the following Java code?
+
+public class Solution {
+    public static void main(String args[]) {
+        int a = 6;
+
+        System.out.println(" ~a = " + ~a);
+    }
+}Explanation
+In two's complement representation (which Java uses for integers), the bitwise NOT of a number n is equal to -(n + 1).
+
+For a = 6:
+
+~6 computes to -(6 + 1), which is -7.
+Problem statement
+What is the output of the following Java code?
+
+class Test {
+    private void display() {
+        System.out.println("Coding Ninjas");
+    }
+
+}
+public class Solution {
+
+    public static void main(String args[]) {
+
+        Test obj = new Test();
+        obj.display();
+    }
+}
+
+Compile-time error private method
+Bytecode in java is given as input to -jvm
+Problem statement
+Which of these methods deletes all the elements from invoking collection in Java? clear
